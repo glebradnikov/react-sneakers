@@ -7,6 +7,11 @@
 
   &__link {
     text-decoration: none;
+    transition: 0.5s;
+  }
+
+  &__link:hover {
+    opacity: 0.5;
   }
 
   &__intro {
@@ -67,6 +72,12 @@
     line-height: 1.21;
     color: #5c5c5c;
     background: #fff;
+    transition: 0.5s;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+    opacity: 0.5;
   }
 
   &__shopping-cart {
