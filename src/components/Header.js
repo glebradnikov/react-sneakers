@@ -16,7 +16,7 @@ function Header() {
             lang="en"
           />
           <div className="header__info">
-            <h1 className="header__title">React Sneakers</h1>
+            <h2 className="header__title">React Sneakers</h2>
             <p className="header__text">Магазин лучших кроссовок</p>
           </div>
         </div>
