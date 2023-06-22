@@ -81,14 +81,34 @@
     opacity: 0.5;
   }
 
-  &__shopping-cart {
+  &__shopping-cart-icon {
+    width: 18px;
+    height: 17px;
+    background: url(../images/header-shopping-cart.svg) center / 18px 17px
+      no-repeat;
   }
 
-  &__favorites {
+  &__favorites-link {
     display: flex;
+    width: 21px;
+    height: 19px;
+    background: url(../images/header-favorites.svg) center / 21px 19px no-repeat;
+    transition: 0.5s;
   }
 
-  &__user {
+  &__favorites-link:hover {
+    opacity: 0.5;
+  }
+
+  &__user-link {
     display: flex;
+    width: 20px;
+    height: 20px;
+    background: url(../images/header-user.svg) center / 20px 20px no-repeat;
+    transition: 0.5s;
+  }
+
+  &__user-link:hover {
+    opacity: 0.5;
   }
 }

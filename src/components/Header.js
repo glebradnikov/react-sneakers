@@ -1,8 +1,5 @@
 import { Link } from 'react-router-dom';
 import headerLogo from '../images/header-logo.png';
-import headerShoppingCart from '../images/header-shopping-cart.svg';
-import headerFavorites from '../images/header-favorites.svg';
-import headerUser from '../images/header-user.svg';
 
 function Header() {
   return (
@@ -24,27 +21,15 @@ function Header() {
       <ul className="header__list">
         <li className="header__item">
           <button className="header__button" type="button" aria-label="Корзина">
-            <img
-              className="header__shopping-cart"
-              src={headerShoppingCart}
-              alt="Корзина"
-            />
+            <div className="header__shopping-cart-icon"></div>
             1205 руб.
           </button>
         </li>
         <li className="header__item">
-          <Link className="header__link" to="/favorites">
-            <img
-              className="header__favorites"
-              src={headerFavorites}
-              alt="Избранное"
-            />
-          </Link>
+          <Link className="header__favorites-link" to="/favorites"></Link>
         </li>
         <li className="header__item">
-          <Link className="header__link" to="/user">
-            <img className="header__user" src={headerUser} alt="Пользователь" />
-          </Link>
+          <Link className="header__user-link" to="/user"></Link>
         </li>
       </ul>
     </header>
